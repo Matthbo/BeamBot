@@ -121,10 +121,10 @@ public class BeamBot {
     }
 
     public static void disconnect(){
-        announcements.stop();
+        if(config.announcements)announcements.stop();
         send("Shutting Down...");
-        chat.close();
         logger.info("Shutting Down...");
+        chat.close();
         System.exit(1);
     }
 
