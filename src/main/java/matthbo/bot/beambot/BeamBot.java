@@ -47,7 +47,7 @@ public class BeamBot {
     private static String name;
     static boolean DEBUG = false;
 
-    private static final String version = "0.3";
+    private static final String version = "0.3.1";
 
     private static final File cmdFolder = new File("commands/");
 
@@ -121,9 +121,9 @@ public class BeamBot {
     }
 
     public static void disconnect(){
-        if(config.announcements)announcements.stop();
         send("Shutting Down...");
         logger.info("Shutting Down...");
+        if(config.announcements)announcements.stop();
         chat.close();
         System.exit(1);
     }
