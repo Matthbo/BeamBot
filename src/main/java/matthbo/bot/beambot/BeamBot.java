@@ -47,7 +47,7 @@ public class BeamBot {
     private static String name;
     static boolean DEBUG = false;
 
-    private static final String version = "0.3.1";
+    private static final String version = "0.4-snapshot";
 
     private static final File cmdFolder = new File("commands/");
 
